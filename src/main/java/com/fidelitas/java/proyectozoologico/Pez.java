@@ -14,12 +14,17 @@ public class Pez extends Animal{
     private double tamannoAcuario;
     
     //Constructor
-    public Pez(String tipoAgua, double tamannoAcuario, String id, int edad, double peso, String nombre, String especies, String zonaZoologico, double costoAlimentacion) {
-        super(id, edad, peso, nombre, especies, zonaZoologico, costoAlimentacion);
-        this.tipoAgua = tipoAgua;
-        this.tamannoAcuario = tamannoAcuario;
-    } 
+    public Pez(String tipoAgua, double tamannoAcuario, String id, int edad,
+        double peso, String nombre, String especies,
+        String zonaZoologico, double costoAlimentacion) {
+
+    super(id, edad, peso, nombre, especies,
+          zonaZoologico, costoAlimentacion);
+
+    setTipoAgua(tipoAgua);
+    setTamannoAcuario(tamannoAcuario);
     
+    }
     //Getters and Setter con Validaciones
     public String getTipoAgua() {
         return tipoAgua;
